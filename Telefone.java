@@ -3,7 +3,16 @@ package hydra;
 public class Telefone {
     private String celular;
     private String fixo;
+    
+    public Telefone(){
+        System.out.println("Classe Telefone foi instanciada!");
+    }
 
+    public Telefone(String celular, String fixo) {
+        this.celular = celular;
+        this.fixo = fixo;
+    }
+    
     public String getCelular() {
         return celular;
     }

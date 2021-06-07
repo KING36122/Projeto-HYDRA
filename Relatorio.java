@@ -6,7 +6,19 @@ public class Relatorio {
     private int dia;
     private int mes;
     private int ano;
-
+    
+    public Relatorio(){
+        System.out.println("Classe Relatorio foi instanciada!");
+    }
+    
+    public Relatorio(int idRelatorio, int tipo, int dia, int mes, int ano) {
+        this.idRelatorio = idRelatorio;
+        this.tipo = tipo;
+        this.dia = dia;
+        this.mes = mes;
+        this.ano = ano;
+    }
+    
     public int getIdRelatorio() {
         return idRelatorio;
     }

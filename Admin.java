@@ -4,7 +4,21 @@ public class Admin {
     private int idAdmin;
     private String login;
     private String senha;
-
+    
+    public Admin(){
+        System.out.println("Classe Admin foi instanciada!");
+    }
+    
+    public Admin(int idAdmin, String login, String senha) {
+        this.idAdmin = idAdmin;
+        this.login = login;
+        this.senha = senha;
+    }
+    
+    public Admin(String login, String senha){
+        this(1,"a","a");
+    }
+    
     public int getIdAdmin() {
         return idAdmin;
     }

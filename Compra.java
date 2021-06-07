@@ -1,8 +1,16 @@
 package hydra;
 
 public class Compra {
-  private int idCompra; 
+    private int idCompra; 
+    
+    public Compra(){
+        System.out.println("Classe Compra foi instanciada!");
+    }
 
+    public Compra(int idCompra) {
+        this.idCompra = idCompra;
+    }
+    
     public int getIdCompra() {
         return idCompra;
     }

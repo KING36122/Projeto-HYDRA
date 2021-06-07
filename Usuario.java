@@ -10,6 +10,19 @@ public class Usuario {
     private Endereco endereco;
     private Telefone telefone;
     
+    public Usuario(){
+        System.out.println("Classe Usuário foi instanciada!");
+    }
+    
+    public Usuario(int idUsuario, String nome, String cpf, String email, String senha, int tipo) {
+        this.idUsuario = idUsuario;
+        this.nome = nome;
+        this.cpf = cpf;
+        this.email = email;
+        this.senha = senha;
+        this.tipo = tipo;
+    }
+    
     public int getIdUsuario() {
         return idUsuario;
     }

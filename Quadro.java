@@ -7,7 +7,20 @@ public class Quadro {
     private float valor_produto;
     private String miniatura;
     private String descricao;
-
+    
+    public Quadro(){
+        System.out.println("Classe Quadro foi instanciada!");
+    }
+    
+    public Quadro(int codigo, int tamanho, int quantidade, float valor_produto, String miniatura, String descricao) {
+        this.codigo = codigo;
+        this.tamanho = tamanho;
+        this.quantidade = quantidade;
+        this.valor_produto = valor_produto;
+        this.miniatura = miniatura;
+        this.descricao = descricao;
+    }
+    
     public int getCodigo() {
         return codigo;
     }

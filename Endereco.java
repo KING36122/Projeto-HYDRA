@@ -6,7 +6,20 @@ public class Endereco {
     private int numero;
     private String cep;
     private String complemento;
-
+    
+    public Endereco(){
+        System.out.println("Classe Endereco foi instanciada!");
+    }
+    
+    public Endereco(String logradouro, String bairro, int numero, String cep, String complemento) {
+        this.logradouro = logradouro;
+        this.bairro = bairro;
+        this.numero = numero;
+        this.cep = cep;
+        this.complemento = complemento;
+    }
+    
+    
     public String getLogradouro() {
         return logradouro;
     }
